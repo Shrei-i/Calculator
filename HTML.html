@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+    <script src="script.js"></script>
+    <h1>Калькулятор</h1>
+    <div class = "calculator">
+        <input type="text" value="" id="input">
+        <button id="clear" class="clear-btn" onclick="reset_form()">C</button>
+        <div class="container">
+            <button id="7" onclick="output_number(id)">7</button>
+            <button id="8" onclick="output_number(id)">8</button>
+            <button id="9" onclick="output_number(id)">9</button>
+            <button id="div" class="operation" value="/" onclick="action(id)">/</button>
+
+            <button id="4" onclick="output_number(id)">4</button>
+            <button id="5" onclick="output_number(id)">5</button>
+            <button id="6" onclick="output_number(id)">6</button>
+            <button id="mult" class="operation" value="*" onclick="action(id)">*</button>
+
+            <button id="1" onclick="output_number(id)">1</button>
+            <button id="2" onclick="output_number(id)">2</button>
+            <button id="3" onclick="output_number(id)">3</button>
+            <button id="sub" class="operation" value="-" onclick="action(id)">-</button>
+
+            <button id="0" onclick="output_number(id)">0</button>
+            <button id="." onclick="output_number(id)">.</button>
+            <button id="add" class="operation" value="+" onclick="action(id)">+</button>
+            <button id="equals" class="operation" type="submit" onclick="calculation()">=</button>
+        </div>
+    </div> 
+    
+    <div class="history">
+        <span>История:</span>
+        <div id="history"></div>
+    </div>
+</body>
+</html>
